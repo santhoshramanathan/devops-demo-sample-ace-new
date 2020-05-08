@@ -38,11 +38,11 @@ designerflows:
 image:
   acemq: cp.icr.io/ibm-ace-mq-server-prod:11.0.0.6
   acemqclient: cp.icr.io/ibm-ace-mqclient-server-prod:11.0.0.6
-  aceonly: us.icr.io/devops-gse-poc/asuh-inventory:v3
+  aceonly: ACE_ONLY
   configurator: cp.icr.io/ibm-ace-icp-configurator-prod:11.0.0.6
   designerflows: cp.icr.io/ibm-ace-designer-flows-prod:11.0.0.6
   pullPolicy: IfNotPresent
-  pullSecret: ibm-entitlement-key
+  pullSecret: PULL_SECRET
 imageType: ace
 integrationServer:
   configurationSecret: null
@@ -91,7 +91,7 @@ odTracingConfig:
 persistence:
   enabled: false
   useDynamicProvisioning: false
-productionDeployment: true
+productionDeployment: false
 readinessProbe:
   failureThreshold: 1
   initialDelaySeconds: 10
