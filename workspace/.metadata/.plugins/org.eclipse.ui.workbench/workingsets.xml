@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workingSetManager>
+<workingSet editPageId="com.ibm.etools.mft.navigator.BrokerWorkingSet.AppLib" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1588962377195_1" label="[sampleAceProject]" name="[sampleAceProject]">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/sampleAceProject" type="4"/>
+</workingSet>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1588962233031_0" label="Window Working Set" name="Aggregate for window 1588962233031"/>
+</workingSetManager>
