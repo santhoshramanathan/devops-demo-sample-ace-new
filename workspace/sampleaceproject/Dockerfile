@@ -1,6 +1,7 @@
 FROM ibmcom/ace:latest
 
-ARG PROJECT=$PROJECT
+ARG PROJECT
+ENV PROJECT=$PROJECT
 RUN echo $PROJECT
 RUN mkdir -p /home/aceuser/bars
 COPY workspace/$PROJECT/gen/*.bar /home/aceuser/bars
