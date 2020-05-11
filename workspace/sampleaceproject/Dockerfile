@@ -5,6 +5,6 @@ ENV PROJECT=$PROJECT1
 RUN echo $PROJECT
 RUN mkdir -p /home/aceuser/bars
 RUN ls -la /
-COPY workspace/sampleaceproject/gen/*.bar /home/aceuser/bars
+COPY workspace/$PROJECT/gen/*.bar /home/aceuser/bars
 RUN chown aceuser:aceuser /home/aceuser/bars
 RUN ace_compile_bars.sh
