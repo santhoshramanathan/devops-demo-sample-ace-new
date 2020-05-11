@@ -1,6 +1,7 @@
 FROM ibmcom/ace:latest
 
-ARG PROJECT
+ARG PROJECT1
+ENV PROJECT=$PROJECT1
 RUN echo $PROJECT
 RUN mkdir -p /home/aceuser/bars
 RUN ls -la /
