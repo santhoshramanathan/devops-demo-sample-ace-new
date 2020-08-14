@@ -18,16 +18,16 @@ ACE Toolkit Workspace for sample application
 5. Once the JSON is imported, click on the create subflow button.
 <img src="Images/05-set-subflows.png" width="750">
 
-6. Since we created this project with a JSON file, we can, in this step, invoke a rest operation based on the json file embedded in the project. 
+6. Since we created this project with a JSON file, we can, in this step, invoke a rest operation based on the json file embedded in the project.
 <img src="Images/06-ref-swagger2.png" width="750">
 
-7. This is where the embedded file should be kept. 
+7. This is where the embedded file should be kept.
 <img src="Images/07-ref-swagger3.png" width="750">
 
 8. Once we select the embedded json, we select the action we want to invoke for the subflow. In this case, it is the get operation for the inventory.
 <img src="Images/08-select-action.png" width="750">
 
-9. Click on RESTRequest under the REST tab and drag it onto the main window. 
+9. Click on RESTRequest under the REST tab and drag it onto the main window.
 <img src="Images/09-new-request.png" width="250">
 
 10. Connect the input to the input of the get action icon and connect the output tab of the action to the output.
@@ -37,8 +37,10 @@ ACE Toolkit Workspace for sample application
 <img src="Images/11-url-override.png" width="650">
 
 ```
-### Warning: 
-When creating the project name, please use only lowercase letters and dashes only. Failure to do so will result in an unsuccessful deployment of the ace server. 
+### Warning:
+When creating the project name, please use only lowercase letters and dashes only. Failure to do so will result in an unsuccessful deployment of the ace server.
 
 3. Click on the link to the newly executed PipelineRun and monitor the status.  You can also run `oc get pods -w` in the <project> to view the status of the pods.
 ```
+
+Test 1
