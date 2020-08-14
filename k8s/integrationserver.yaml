@@ -1,0 +1,24 @@
+apiVersion: appconnect.ibm.com/v1beta1
+kind: IntegrationServer
+metadata:
+  name: is-toolkit
+spec:
+  version: 11.0.0
+  license:
+    accept: false
+    license: L-AMYG-BQ2E4U
+    use: CloudPakForIntegrationProduction
+  barURL: ''
+  designerFlowsOperationMode: disabled
+  service:
+    endpointType: http
+  useCommonServices: true
+  replicas: 1
+  router:
+    timeout: 120s
+pod:
+  containers:
+    runtime:
+      image: 'us.icr.io/cp4i-gse-poc/sample-ace-project:dummy'
+  imagePullSecrets:
+    - name: ibm-cr-pull-secret
