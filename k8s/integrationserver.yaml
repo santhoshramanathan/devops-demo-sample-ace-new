@@ -1,24 +1,23 @@
 apiVersion: appconnect.ibm.com/v1beta1
 kind: IntegrationServer
 metadata:
-  name: is-toolkit
+  name: sample-ace-project
 spec:
-  version: 11.0.0
-  license:
-    accept: false
-    license: L-AMYG-BQ2E4U
-    use: CloudPakForIntegrationProduction
-  barURL: ''
-  designerFlowsOperationMode: disabled
-  service:
-    endpointType: http
-  useCommonServices: true
-  replicas: 1
-  router:
-    timeout: 120s
-pod:
-  containers:
-    runtime:
-      image: '__IMAGE__'
-  imagePullSecrets:
-    - name: ibm-cr-pull-secret
+  designerFlowsOperationMode: disabled
+  license:
+    accept: true
+    license: L-AMYG-BQ2E4U
+    use: CloudPakForIntegrationProduction
+  pod:
+    containers:
+      runtime:
+        image: '__IMAGE__'
+    imagePullSecrets:
+      - name: ibm-cr-pull-secret
+  replicas: 1
+  router:
+    timeout: 120s
+  service:
+    endpointType: http
+  useCommonServices: true
+  version: 11.0.0
