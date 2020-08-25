@@ -21,3 +21,4 @@ spec:
     endpointType: http
   useCommonServices: true
   version: 11.0.0
+  configurations: ["odbc-conf"]  
