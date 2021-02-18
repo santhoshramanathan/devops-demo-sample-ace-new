@@ -1,24 +1,20 @@
 apiVersion: appconnect.ibm.com/v1beta1
 kind: IntegrationServer
-metadata:
-  name: sample-ace-project
-spec:
+metadata: 
+  name: is-through-pipeline
+spec: 
+  barURL: ""
   designerFlowsOperationMode: disabled
-  license:
+  license: 
     accept: true
-    license: L-AMYG-BQ2E4U
-    use: CloudPakForIntegrationProduction
-  pod:
-    containers:
-      runtime:
+    license: L-APEH-BPUCJK
+    use: CloudPakForIntegrationNonProduction
+  pod: 
+    containers: 
+      runtime: 
         image: '__IMAGE__'
-    imagePullSecrets:
-      - name: ibm-cr-pull-secret
   replicas: 1
-  router:
-    timeout: 120s
-  service:
+  service: 
     endpointType: http
   useCommonServices: true
-  version: 11.0.0
-  configurations: ["odbc-conf"]  
+  version: 11.0.0.10-r1
