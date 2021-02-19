@@ -4,7 +4,7 @@ FROM default-route-openshift-image-registry.cloud-integration-ocp45-6fb0b86391cd
 #RUN ace_compile_bars.sh
 USER root
 
-COPY HTTPGetApp_v2.bar /home/aceuser/bars
+COPY HTTPGetApp_v2.bar /home/aceuser/initial-config/bars/
 RUN  chmod -R ugo+rwx /home/aceuser
 
 USER aceuser
