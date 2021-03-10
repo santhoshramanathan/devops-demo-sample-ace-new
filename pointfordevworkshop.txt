@@ -1,0 +1,65 @@
+My intro:
+Hello everyone, My name is Santhosh. I am working in TCS and based out of Chennai, India. I have more than a decade of experience in integration landscape 
+primarily IBM technologies like MQ, IIB/ACE, Event Streams, Datapower etc.. Currently my role is cloud pak for integration consultant in TCS. I am Happy to 
+participate in this discussion and to share my CP4I working experience with you.
+
+Openshift:
+ideal platform which helps application to be deployed anywhere (any cloud, on prem) (no vendor lockin)
+Powerful platform which has lot of enhancements on top of Kubernetes
+User friendly UI
+efficient container orchestration platform 
+easy to deploying, scaling and mgmt of applications 
+
+API Connect:
+With rapid adoption of APIFicaton by different organizations, the demand for API tools are more than ever and API Connect addresses the APIfication journey. 
+Coupled with Datapower, it provides a strong security layer on top of APIs.
+
+Notes:
+IBM Cloud secure gateway to provide access to your on-premises services from APIConnect for cloud
+Asset repo and API Connect
+
+Messaging: 
+1) no stream history (eventhough it has pub/sub mechanism)
+2) request for data use cases (where one application ask other application a data (asynchronous) and it responds back with data)
+2) once and once only delivery
+3) Each subscribing apps has access to a dedicated queue of to-be-consumed messages matching the descriptor
+4) Request/reply is possible (sync/async)
+5) Supports global coordination
+6) fine grain messaging
+7) Focussed on message exchange and transaction (suitable for moving messages from one system to another and message from queue will be delivered if the 
+receiving application acknowledge it)
+
+Kafka (Event Streams):
+1) stream history available
+2) emission of enterprise data about status and other info
+2) can move forward and backward in topics to retrieve old messages too
+3) No queue concept
+5) No transactionally coordinated (no global coordination)
+6) Scalable subscription
+7) Focussed on streaming of events, analytics
+enterprise messaging and event streaming are complementary technologies than competing technologies
+Event-history, fine-grained subscription, scalable consumption, transactional behavior
+
+Challenges:
+monolith integration landscape
+tightly coupled applications
+on-prem data center or VMs
+slower to market due to dependency
+lot of efforts to implement a small change in application and testing efforts
+kubernetes, containers, openshift, microservices (upskilling)
+
+Requirement:
+cloud migration (public/private/Managed VMs)
+containerization of applications
+automation/devsecops
+auto-scaling
+different tools for different integration activities
+single dashboard view of all instances of integration tools
+seamless connection with NoSQL dbs
+connectivity to SaaS applicaitons like (salesforce, cloudant etc..)
+
+
+question to mangesh:
+rewards of implementation?
+what if they ask whether we implemented anything to produciton or not?
+how we implemented APIC in cp4i?
